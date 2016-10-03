@@ -4,7 +4,7 @@ Akeneo Cheat Sheet
 ## Console command shortcuts
 
 See further chapters to know how to install those command aliases on 
-(Prod)[#shortcuts-on-your-production-environment] or (Dev)[#shortcuts-on-your-development-environment]
+[Prod](#shortcuts-on-your-production-environment) or [Dev](#shortcuts-on-your-development-environment)
 
 | Command     | Description                                             |
 | ----------- | ------------------------------------------------------- |
