@@ -3,7 +3,8 @@ Akeneo Cheat Sheet
 
 ## Console command shortcuts
 
-See further chapters 
+See further chapters to know how to install those command aliases on 
+(Prod)[#shortcuts-on-your-production-environment] or (Dev)[#shortcuts-on-your-development-environment]
 
 | Command     | Description                                             |
 | ----------- | ------------------------------------------------------- |
@@ -14,7 +15,7 @@ See further chapters
 | `ak-batch`  | Run batch jobs                                          |
 | `ak-jobs`   | List batch jobs                                         |
 
-### On your production environment
+### Shortcuts on your production environment
 
 On your production environments, insert those lines in your `~/.bash_profile` file :
 
@@ -29,7 +30,7 @@ alias ak-jobs='app/console akeneo:batch:list-jobs --env=prod'
 
 Then run `source ~/.bash_profile`
 
-### On your development environment
+### Shortcuts on your development environment
 
 On your development environments, insert those lines in your `~/.bash_profile` file :
 
