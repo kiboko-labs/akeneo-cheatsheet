@@ -57,7 +57,7 @@ If you are experiencing such errors like :
 request.CRITICAL: Uncaught PHP Exception ReflectionException: "Property Pim\Bundle\CatalogBundle\Entity\Channel::$color does not exist" at /var/www/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php line 82 {"exception":"[object] (ReflectionException(code: 0): Property Pim\\Bundle\\CatalogBundle\\Entity\\Channel::$color does not exist at /var/www/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:82)"} []
 ```
 
-It is probably an APCu cache issue. To fix it, restart your Apache and PHP-FPM services :
+It is probably an *OPCache* opcode cache issue. To fix it, restart your Apache and PHP-FPM services :
 
 `sudo service apache2 restart`
 
