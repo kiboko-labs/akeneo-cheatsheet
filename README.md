@@ -30,6 +30,8 @@ alias ak-jobs='app/console akeneo:batch:list-jobs --env=prod'
 
 Then run `source ~/.bash_profile`
 
+Thanks to @jmleroux
+
 ### Shortcuts on your development environment
 
 On your development environments, insert those lines in your `~/.bash_profile` file :
@@ -45,6 +47,8 @@ alias ak-jobs='app/console akeneo:batch:list-jobs --env=dev'
 
 Then run `source ~/.bash_profile`
 
+Thanks to @jmleroux
+
 ## Having fatal errors after upgrading Akeneo or one of your dependencies
 
 If you are experiencing such errors like :
@@ -58,6 +62,8 @@ It is probably an APCu cache issue. To fix it, restart your Apache and PHP-FPM s
 `sudo service apache2 restart`
 
 `sudo service php5-fpm restart`
+
+Thanks to @damien-carcel
 
 ## Fix cache file permissions
 
