@@ -45,6 +45,20 @@ alias ak-jobs='app/console akeneo:batch:list-jobs --env=dev'
 
 Then run `source ~/.bash_profile`
 
+## Having fatal errors after upgrading Akeneo or one of your dependencies
+
+If you are experiencing such errors like :
+
+```
+request.CRITICAL: Uncaught PHP Exception ReflectionException: "Property Pim\Bundle\CatalogBundle\Entity\Channel::$color does not exist" at /var/www/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php line 82 {"exception":"[object] (ReflectionException(code: 0): Property Pim\\Bundle\\CatalogBundle\\Entity\\Channel::$color does not exist at /var/www/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php:82)"} []
+```
+
+It is probably an APCu cache issue. To fix it, restart your Apache and PHP-FPM services :
+
+`sudo service apache2 restart`
+
+`sudo service php5-fpm restart`
+
 ## Fix cache file permissions
 
 On some platforms, you may have some file permission issues in the cache
