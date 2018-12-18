@@ -1,9 +1,23 @@
 Akeneo Cheat Sheet
 ==================
 
+<!-- TOC -->
+In this document:
+- [Console command shortcuts](#console-command-shortcuts)
+  - [Shortcuts on your production environment](#shortcuts-on-your-production-environment)
+  - [Shortcuts on your development environment](#shortcuts-on-your-development-environment)
+- [Having fatal errors after upgrading Akeneo or one of your dependencies](#having-fatal-errors-after-upgrading-akeneo-or-one-of-your-dependencies)
+- [Fix cache file permissions](#fix-cache-file-permissions)
+
+Other:
+- [Migrating with Transporteo](AkeneoMigrationAvecTransporteo_fr.md)
+- [Creating a custom ElasticSearch client](elasticsearch_custom_client.md)
+- [Extending javascript](extending_javascript.md)
+<!-- /TOC -->
+
 ## Console command shortcuts
 
-See further chapters to know how to install those command aliases on 
+See further chapters to know how to install those command aliases on
 [Prod](#shortcuts-on-your-production-environment) or [Dev](#shortcuts-on-your-development-environment)
 
 | Command     | Description                                             |
@@ -69,9 +83,9 @@ Thanks to @damien-carcel
 
 On some platforms, you may have some file permission issues in the cache
 files when you have a web user different from your shell user.
- 
+
 To fix this run those commands, replacing `www-data:www-data` by the correct
-user and group on your server if needed : 
+user and group on your server if needed :
 
 ```bash
 chown -R www-data:www-data app/cache/*
