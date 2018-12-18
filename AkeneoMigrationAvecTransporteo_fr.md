@@ -166,17 +166,3 @@ delete from pim_catalog_variant_attribute_set_has_attributes;
 delete from pim_catalog_family_variant_translation;
 delete from pim_catalog_family_variant_has_variant_attribute_sets;
 delete from pim_catalog_family_variant;
-```
-## Troubleshooting
-
-### Connexion SSH avec un couple utilisateur-mot-de-passe
-Par défaut, Transporteo tente de se connecter aux serveurs SSH avec une clé privée. Si vous préférez vous connecter avec un couple utilisateur-mot-de-passe, modifiez la ligne suivante dans la class `\Akeneo\PimMigration\Infrastructure\Cli\Ssh`.
-Commentez la ligne :
-```
-if (false === ssh2_auth_agent($connection, $username)) {
-```
-et ajoutez :
-```
-if (false === ssh2_auth_password($connection, $username, "root")) {
-```
-> Il ne faut bien sûr pas versionner ces modifications, à moins de travailler sur un fork.
