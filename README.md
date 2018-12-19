@@ -95,6 +95,6 @@ sudo chmod -R ug+Xrw app/cache/*
 sudo chmod -R a+Xr app/cache/*
 ```
 ## Fix import/export profiles
-After having migrated, you may encounter errors while trying to run an import or export log. The json structure has changed between
-Akeneo 1 and Akeneo 2.
+After having migrated, you may encounter errors while trying to run an import or export job. The json structure has changed between Akeneo 1 and Akeneo 2.
+
 The easiest way to fix that is to edit each concerned profile and save it again even without having changed anything (you might have to save it twice since the first try could also result in an error). Once saved, the job should be running if you tell it to.
