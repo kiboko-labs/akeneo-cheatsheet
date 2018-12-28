@@ -52,6 +52,7 @@ parameters:
     ssh_hostname_source_pim: '172.22.0.1'
     ssh_port_source_pim: '2222'
     ssh_user_source_pim: 'root'
+    ssh_passwd_source_pim: ~  # Change this value if you connect the server with username and password
 
     # Base URI (with http://) to request the API
     api_base_uri_source_pim: 'http://172.22.0.1:8081'
@@ -166,3 +167,6 @@ delete from pim_catalog_variant_attribute_set_has_attributes;
 delete from pim_catalog_family_variant_translation;
 delete from pim_catalog_family_variant_has_variant_attribute_sets;
 delete from pim_catalog_family_variant;
+```
+## Migration de l'historique
+Transporteo ne migre pas l'historique. Un script Python a été développé dans ce but: [https://github.com/kiboko-labs/akeneo-python-tools](https://github.com/kiboko-labs/akeneo-python-tools).
